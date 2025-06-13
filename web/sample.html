@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Passport Application Form</h2>
+
+        <form action="#" method="POST">
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full_name">Full Name (as per official documents)</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="place_of_birth">Place of Birth</label>
+                <input type="text" id="place_of_birth" name="place_of_birth" required>
+
+                <label for="nationality">Nationality</label>
+                <input type="text" id="nationality" name="nationality" required>
+
+                <label for="marital_status">Marital Status</label>
+                <select id="marital_status" name="marital_status" required>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                </select>
+
+                <label for="father_name">Father's Name</label>
+                <input type="text" id="father_name" name="father_name" required>
+
+                <label for="mother_name">Mother's Name</label>
+                <input type="text" id="mother_name" name="mother_name" required>
+
+                <label for="spouse_name">Spouse's Name (if applicable)</label>
+                <input type="text" id="spouse_name" name="spouse_name">
+            </fieldset>
+
+            <!-- Contact Information Section -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="perm_address">Permanent Address</label>
+                <textarea id="perm_address" name="perm_address" required></textarea>
+
+                <label for="corr_address">Correspondence Address (if different)</label>
+                <textarea id="corr_address" name="corr_address"></textarea>
+
+                <label for="contact_number">Contact Phone Number</label>
+                <input type="tel" id="contact_number" name="contact_number" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Identity Proof Section -->
+            <fieldset>
+                <legend>Identity Proof</legend>
+                <label for="aadhar_number">Aadhar Number</label>
+                <input type="text" id="aadhar_number" name="aadhar_number" required>
+
+                <label for="voter_id">Voter ID</label>
+                <input type="text" id="voter_id" name="voter_id">
+
+                <label for="pan_card">PAN Card Number</label>
+                <input type="text" id="pan_card" name="pan_card">
+
+                <label for="other_id">Other Identity Proof</label>
+                <input type="text" id="other_id" name="other_id">
+            </fieldset>
+
+            <!-- Passport Details Section -->
+            <fieldset>
+                <legend>Passport Details (if renewing)</legend>
+                <label for="previous_passport_number">Previous Passport Number</label>
+                <input type="text" id="previous_passport_number" name="previous_passport_number">
+
+                <label for="issue_date">Issue Date</label>
+                <input type="date" id="issue_date" name="issue_date">
+
+                <label for="expiry_date">Expiry Date</label>
+                <input type="date" id="expiry_date" name="expiry_date">
+
+                <label for="lost_passport_details">Lost Passport Details (if applicable)</label>
+                <textarea id="lost_passport_details" name="lost_passport_details"></textarea>
+            </fieldset>
+
+            <!-- Additional Information Section -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" name="occupation" required>
+
+                <label for="employer_name">Name and Address of Employer (if applicable)</label>
+                <textarea id="employer_name" name="employer_name"></textarea>
+
+                <label for="purpose_of_travel">Purpose of Travel</label>
+                <select id="purpose_of_travel" name="purpose_of_travel" required>
+                    <option value="tourism">Tourism</option>
+                    <option value="business">Business</option>
+                    <option value="employment">Employment</option>
+                    <option value="study">Study</option>
+                </select>
+
+                <label for="criminal_records">Any Previous Criminal Records</label>
+                <textarea id="criminal_records" name="criminal_records"></textarea>
+
+                <label for="passport_refusal">Have you ever been refused a passport?</label>
+                <select id="passport_refusal" name="passport_refusal" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="special_category">Are you applying under any special category?</label>
+                <input type="text" id="special_category" name="special_category">
+            </fieldset>
+
+            <!-- Declaration and Signature Section -->
+            <fieldset>
+                <legend>Declaration and Signature</legend>
+                <label for="declaration">I declare that the details provided are true and accurate to the best of my knowledge.</label>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                
+                <label for="signature">Applicant's Signature</label>
+                <input type="text" id="signature" name="signature" required>
+            </fieldset>
+
+            <!-- Supporting Documents Section -->
+            <fieldset>
+                <legend>Supporting Documents</legend>
+                <label for="documents">Upload Supporting Documents (Proof of Identity, Address, etc.)</label>
+                <input type="file" id="documents" name="documents" multiple required>
+            </fieldset>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Renewal</title>
+    <link rel="stylesheet" href="css/renewal.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Passport Renewal</h2>
+        <form action="renewservlet" method="POST">
+            <fieldset>
+                <legend>Passport Details</legend>
+                <label for="passportNumber">Passport Number:</label>
+                <input type="text" id="passportNumber" name="passportNumber" required>
+
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="date" id="expiryDate" name="expiryDate" required>
+
+                <label for="placeOfIssue">Place of Issue:</label>
+                <input type="text" id="placeOfIssue" name="placeOfIssue" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <button type="submit">Renew Passport</button>
+        </form>
+    </div>
+
+</body>
+</html>

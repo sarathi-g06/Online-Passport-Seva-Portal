@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Passport Application</title>
+    <link rel="stylesheet" href="./css/application.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>New Passport Application</h2>
+        <form action="applicationServlet" method="POST" enctype="multipart/form-data">
+            
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="birthPlace">Place of Birth:</label>
+                <input type="text" id="birthPlace" name="birthPlace" required>
+
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" required>
+
+                <label for="maritalStatus">Marital Status:</label>
+                <select id="maritalStatus" name="maritalStatus" required>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+
+                <label for="motherName">Mother's Name:</label>
+                <input type="text" id="motherName" name="motherName" required>
+            </fieldset>
+
+            <!-- Contact Information Section -->
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="permanentAddress">Permanent Address:</label>
+                <textarea id="permanentAddress" name="permanentAddress" required></textarea>
+
+                <label for="correspondenceAddress">Correspondence Address:</label>
+                <textarea id="correspondenceAddress" name="correspondenceAddress"></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Identity Proof Section -->
+            <fieldset>
+                <legend>Identity Proof</legend>
+
+                <label for="aadharNumber">Aadhar Number:</label>
+                <input type="text" id="aadharNumber" name="aadharNumber">
+
+                <label for="voterID">Voter ID Number:</label>
+                <input type="text" id="voterID" name="voterID">
+
+                <label for="panCard">PAN Card Number:</label>
+                <input type="text" id="panCard" name="panCard">
+
+            </fieldset>
+
+            <!-- Supporting Documents Section -->
+            <fieldset>
+                <legend>Supporting Documents</legend>
+
+                <label for="identityProof">Proof of Identity:</label>
+                <input type="file" id="identityProof" name="identityProof" accept=".pdf, .jpg, .png" required>
+            </fieldset>
+
+            <!-- Declaration Section -->
+            <fieldset>
+                <legend>Declaration</legend>
+                
+                <p>
+                    I hereby declare that all the information provided above is true and correct to the best of my knowledge. I understand that any false information may result in the rejection of my application.
+                </p>
+
+               
+            </fieldset>
+
+            <!-- Submission Button -->
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            const form = document.forms[0];
+            const email = form["email"].value;
+            const phone = form["phone"].value;
+            
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            const phonePattern = /^[0-9]{10}$/;
+
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (!phone.match(phonePattern)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+    
+    
+</body>
+</html>
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application</title>
+    <link rel="stylesheet" href="./css/apply.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Passport Application Portal</h2>
+        <p>Welcome to the Passport Application Portal. Please choose an option below:</p>
+
+        <div class="button-container">
+            <button class="btn" onclick="window.location.href='application.html'">New Application</button>
+            <button class="btn" onclick="window.location.href='renewal.html'">Renewal</button>
+            <button class="btn" onclick="window.location.href='booking.html'">Book Appointment</button>
+            <button class="btn" onclick="window.location.href='appstatus.html'">View Application Status</button>
+            <button class="btn" onclick="navigateToPage2()">logout </button>
+
+    <script>
+        function navigateToPage2() {
+            window.location.replace("index.html");
+        }
+    </script>
+        </div>
+    </div>
+
+</body>
+</html>
+

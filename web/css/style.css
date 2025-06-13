@@ -1,0 +1,129 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #004aad;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome section */
+.welcome {
+    background: url('../web/images/passport.jpeg') no-repeat center center / cover;
+    color: #ffffff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.welcome p {
+    
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome .btn {
+    background-color: #004aad;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.welcome .btn:hover {
+    background-color: #003580;
+}
+
+/* Services section */
+.services {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.services .service-box {
+    display: inline-block;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}

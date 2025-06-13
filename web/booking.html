@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+    <div class="appointment-container">
+        <h2>Book Appointment</h2>
+        <form action="appointmentservlet" method="POST">  
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="acknowledgementNumber">Application Number:</label> <!-- Updated label -->
+                <input type="text" id="acknowledgementNumber" name="acknowledgementNumber" required> <!-- Updated name -->
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment Details</legend>
+                
+                <label for="appointmentDate">Preferred Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <label for="appointmentTime">Preferred Time:</label>
+                <select id="appointmentTime" name="appointmentTime" required>
+                    <option value="">Select Time</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                </select>
+
+                <label for="appointmentLocation">Appointment Location:</label>
+                <input type="text" id="appointmentLocation" name="appointmentLocation" placeholder="Enter passport office location" required>
+            </fieldset>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+</body>
+</html>

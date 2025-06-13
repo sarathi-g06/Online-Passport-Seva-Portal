@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome, Admin! Please choose an action below:</p>
+
+        <div class="button-container">
+        <form action="ApplicationApprovalServlet" method="get">
+            <button type="submit">Approve/Reject Applicants</button>
+        </form>
+            <button class="btn" onclick="window.location.href='displayAppointment.jsp'">View Appointments</button> <br>
+                    <button  class="btn" onclick="navigateToPage2()">logout </button>
+
+        </div>
+
+    <script>
+        function navigateToPage2() {
+            window.location.replace("index.html");
+        }
+//        history.pushState(null, null, window.location.href);
+//    window.onpopstate = function () {
+//        history.go(1);
+    </script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Seva Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: url('./images/passport.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        header h1 {
+            color: #f8f9fa;
+            font-size: 24px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            float: right;
+        }
+
+        nav ul li a {
+            color: #f8f9fa;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #f8f9fa;
+            color: #333;
+            border-radius: 4px;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            text-align: center;
+            margin-top: 120px;
+            color: #f8f9fa;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            width: 80%;
+        }
+
+        .welcome h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #f8f9fa;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Services Section */
+        .services {
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .service-box {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            max-width: 30%;
+        }
+
+        .service-box h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f8f9fa;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <h1>Passport Seva Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome container">
+        <h2>Welcome to the Passport Seva Portal</h2>
+        <p>Apply for a new passport, check your application status, and schedule appointments online with ease.</p>
+        <a href="about.html" class="btn">Get Started</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <h3>Apply for Passport</h3>
+                    <p>Submit your passport application and upload required documents from the comfort of your home.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Track Application</h3>
+                    <p>Easily track your application status and receive updates on its progress.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Schedule Appointment</h3>
+                    <p>Book an appointment for document verification and biometrics at your convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sarathy Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
